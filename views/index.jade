@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  form(role='form' action='/record' method='post')
+    |time:
+    input(type='text' name='time')
+    br
+    |life:
+    input(type='text' name='life')
+    br
+    |UUID:
+    input(type='text' name='UUID')
+    br
+    |stage:
+    input(type='text' name='stage')
+    input(type='submit')
